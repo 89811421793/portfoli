@@ -23,7 +23,7 @@ color: maroon;
 `
 
 const StyledAbout = styled.section`
-min-height: 50vh;
+min-height: 40vh;
 `
 
 

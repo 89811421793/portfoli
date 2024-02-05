@@ -5,10 +5,10 @@ import { FlexWrapper } from '../../components/flexWrapper';
 export const Header: React.FC = () => {
     return(
         <StyledHeader>
-          <GeneralLink href="/">Home</GeneralLink>
+          <NavLink href="/">Home</NavLink>
           <FlexWrapper justify={'space-between'}>
-          <GeneralLink href="#">Projects</GeneralLink>
-          <GeneralLink href="#">Contact</GeneralLink>
+          <NavLink href="#">Projects</NavLink>
+          <NavLink href="#">Contact</NavLink>
           </FlexWrapper>
         </StyledHeader>
         
@@ -21,6 +21,6 @@ display: flex;
 justify-content: space-between;
 padding: 28px;
 `
-const GeneralLink = styled.a`
+const NavLink = styled.a`
 margin-right: 15px;
 `
