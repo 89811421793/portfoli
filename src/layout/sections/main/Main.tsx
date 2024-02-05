@@ -15,6 +15,7 @@ export const Main: React.FC = () => {
           sint. Velit officia consequat duis enim velit mollit. Exercitation
           veniam consequat sunt.
         </p>
+        <ContactLink href={'#'}>Contact Me</ContactLink>
       </div>
       <MainPic src={geekpic} alt="" />
       </FlexWrapper>
@@ -40,4 +41,7 @@ color: moccasin;
 
 const Name = styled.h2`
 color: khaki;
+`
+const ContactLink = styled.a`
+
 `

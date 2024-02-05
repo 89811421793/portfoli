@@ -1,15 +1,17 @@
 import React from 'react';
 import styled from 'styled-components';
-import { StyledButton } from '../../components/Button';
-import { Container } from '../../components/Container';
+import { FlexWrapper } from '../../components/flexWrapper';
 
 export const Header: React.FC = () => {
     return(
         <StyledHeader>
-          <a href="/">Home</a>
-          <a href="#">Projects</a>
-          <StyledButton>Contact</StyledButton>
+          <GeneralLink href="/">Home</GeneralLink>
+          <FlexWrapper justify={'space-between'}>
+          <GeneralLink href="#">Projects</GeneralLink>
+          <GeneralLink href="#">Contact</GeneralLink>
+          </FlexWrapper>
         </StyledHeader>
+        
     );
 };
 
@@ -17,4 +19,8 @@ const StyledHeader = styled.header`
 background-color: lightsalmon;
 display: flex;
 justify-content: space-between;
+padding: 28px;
+`
+const GeneralLink = styled.a`
+margin-right: 15px;
 `
