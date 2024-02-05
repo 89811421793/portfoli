@@ -4,7 +4,7 @@ import { SectionTitle } from "../../../components/SectionTitle";
 
 export const About: React.FC = () => {
   return (
-    <div>
+    <StyledAbout>
       <SectionTitle>About me</SectionTitle>
       <AboutDescription>
         The long barrow was built on land previously inhabited in the Mesolithic
@@ -14,12 +14,16 @@ export const About: React.FC = () => {
         remains were placed within this chamber during the Neolithic period,
         representing at least nine or ten individuals.
       </AboutDescription>
-    </div>
+    </StyledAbout>
   );
 };
 
 const AboutDescription = styled.p`
 color: maroon;
+`
+
+const StyledAbout = styled.section`
+min-height: 50vh;
 `
 
 
