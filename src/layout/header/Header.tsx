@@ -16,7 +16,6 @@ export const Header: React.FC = () => {
 };
 
 const StyledHeader = styled.header`
-background-color: lightsalmon;
 display: flex;
 justify-content: space-between;
 padding: 28px;

@@ -46,5 +46,4 @@ export const Projects: React.FC = () => {
 
 const StyledProjects = styled.section`
   min-height: 100vh;
-  background-color: ivory;
 `;

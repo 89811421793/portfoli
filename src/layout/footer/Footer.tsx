@@ -3,7 +3,7 @@ import styled from "styled-components";
 import { Icon } from "../../components/icon/Icon";
 import { FlexWrapper } from "../../components/flexWrapper";
 
-export const Footer = () => {
+export const Footer:React.FC = () => {
   return (
     <StyledFooter>
       <FlexWrapper direction={'column'} align={'center'}>
@@ -11,21 +11,21 @@ export const Footer = () => {
         <ProfileItem>
           <ProfileLink href="#">
             <Icon width={'22'} height={'21'} viewBox={'0 0 21 21'} iconId={"gmail"} />
-            <h3>GMAIL</h3>
+            <ProfileTitle>GMAIL</ProfileTitle>
           </ProfileLink>
         </ProfileItem>
 
         <ProfileItem>
           <ProfileLink href="#">
             <Icon width={'22'} height={'21'} viewBox={'0 0 21 21'} iconId={"linkedin"} />
-            <h3>LINKEDIN</h3>
+            <ProfileTitle>LINKEDIN</ProfileTitle>
           </ProfileLink>
         </ProfileItem>
 
         <ProfileItem>
           <ProfileLink href="#">
             <Icon width={'22'} height={'21'} viewBox={'0 0 21 21'} iconId={"github"} />
-            <h3>GITHUB</h3>
+            <ProfileTitle>GITHUB</ProfileTitle>
           </ProfileLink>
         </ProfileItem>
       </ProfilesList>
@@ -40,17 +40,18 @@ export const Footer = () => {
 };
 
 const StyledFooter = styled.footer`
-background-color: color(display-p3 1 1 0);
-
 `;
 
 const ProfilesList = styled.ul`
 display: flex;
+gap:10px;
 `;
 
 const ProfileItem = styled.li``;
 
 const ProfileLink = styled.a``;
+
+const ProfileTitle = styled.h3``;
 
 const NavLink = styled.a`
 margin-right: 10px;

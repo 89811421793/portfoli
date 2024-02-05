@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { theme } from "../../../../styles/Theme";
 
 type ProjectPropsType = {
     title: string
@@ -23,7 +24,7 @@ export const Project = (props: ProjectPropsType) => {
 };
 
 const StyledProject = styled.div`
-background-color:crimson;
+background-color:${theme.colors.secondaryBg};
 flex-basis: 40%;
 margin: 20px;
 `;
