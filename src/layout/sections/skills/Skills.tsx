@@ -3,10 +3,12 @@ import styled from "styled-components";
 import { FlexWrapper } from "../../../components/flexWrapper";
 import { SectionTitle } from "../../../components/SectionTitle";
 import { Skill } from "./skill/Skill";
+import { Container } from "../../../components/Container";
 
 export const Skills: React.FC = () => {
   return (
     <StyledSkills>
+      <Container>
       <SectionTitle>Skills</SectionTitle>
       <FlexWrapper wrap={'wrap'}  justify={'space-around'}>
         <Skill iconId="js" title="JAVASCRIPT" />
@@ -23,6 +25,7 @@ export const Skills: React.FC = () => {
         <Skill iconId="redux" title="REDUX" />
         <Skill iconId="js" title="javascript" />
       </FlexWrapper>
+      </Container>
     </StyledSkills>
   );
 };

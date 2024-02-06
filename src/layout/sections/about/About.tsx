@@ -1,10 +1,12 @@
 import React from "react";
 import styled from "styled-components";
 import { SectionTitle } from "../../../components/SectionTitle";
+import { Container } from "../../../components/Container";
 
 export const About: React.FC = () => {
   return (
     <StyledAbout>
+      <Container>
       <SectionTitle>About me</SectionTitle>
       <AboutDescription>
         The long barrow was built on land previously inhabited in the Mesolithic
@@ -14,12 +16,14 @@ export const About: React.FC = () => {
         remains were placed within this chamber during the Neolithic period,
         representing at least nine or ten individuals.
       </AboutDescription>
+      </Container>
     </StyledAbout>
   );
 };
 
 const AboutDescription = styled.p`
 color: maroon;
+max-width: 865px;
 `
 
 const StyledAbout = styled.section`

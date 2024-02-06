@@ -4,10 +4,12 @@ import { SectionTitle } from "../../../components/SectionTitle";
 import { FlexWrapper } from "../../../components/flexWrapper";
 import { Project } from "./project/Project";
 import cardImg from "./../../../assets/images/proj-card.webp";
+import { Container } from "../../../components/Container";
 
 export const Projects: React.FC = () => {
   return (
     <StyledProjects>
+      <Container>
       <SectionTitle>Projects</SectionTitle>
       <FlexWrapper wrap={'wrap'} justify={'center'}>
         <Project
@@ -40,6 +42,7 @@ export const Projects: React.FC = () => {
           src={cardImg}
         />
       </FlexWrapper>
+      </Container>
     </StyledProjects>
   );
 };

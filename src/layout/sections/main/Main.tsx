@@ -2,10 +2,12 @@ import React from "react";
 import styled from "styled-components";
 import geekpic from "../../../assets/images/geek.svg";
 import { FlexWrapper } from "../../../components/flexWrapper";
+import { Container } from "../../../components/Container";
 
 export const Main: React.FC = () => {
   return (
     <StyledMain>
+      <Container>
         <FlexWrapper align='center' justify='space-around'>
       <div>
         <MainTitle>WEB DEVELOPER</MainTitle>
@@ -19,6 +21,7 @@ export const Main: React.FC = () => {
       </div>
       <MainPic src={geekpic} alt="" />
       </FlexWrapper>
+      </Container>
     </StyledMain>
   );
 };

@@ -3,12 +3,13 @@ import styled from "styled-components";
 import { SectionTitle } from "../../../components/SectionTitle";
 import { StyledButton } from "../../../components/Button";
 import { FlexWrapper } from "../../../components/flexWrapper";
+import { Container } from "../../../components/Container";
 
 export const Contacts = () => {
     return(
         <StyledContacts>
+            <Container>
             <SectionTitle>Contacts</SectionTitle>
-           
             <StyledForm>
             <FlexWrapper direction={"column"}>
                 <StyledField placeholder={"Your Name"}/>
@@ -17,7 +18,7 @@ export const Contacts = () => {
             <StyledButton type={'submit'}>Submit</StyledButton>
             </FlexWrapper>
             </StyledForm>
-           
+            </Container>
         </StyledContacts>
     );
 };
