@@ -21,7 +21,12 @@ export const Header: React.FC = () => {
 };
 
 const StyledHeader = styled.header`
-padding: 28px;
+padding: 28px 0;
+position: fixed;
+top:0;
+left:0;
+right:0;
+z-index: 9999;
 `
 
 const NavLink = styled.a`
